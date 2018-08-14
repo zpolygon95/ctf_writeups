@@ -2,7 +2,7 @@
 
 DEFCON26 restarted my interest in Capture the Flag. This repo will
 contain my write-ups for each of the puzzles I solve. Find CTFs at
-[ctftime.org]... Or by coming to DEFCON.
+[ctftime.org](ctftime.org)... Or by coming to DEFCON.
 
 ## Participation ##
 
