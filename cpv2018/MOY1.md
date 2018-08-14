@@ -116,7 +116,7 @@ Given how hard (for me) the second function was to reverse, I decided to
 try something more in my wheelhouse: shuffling bits! `enc3` shuffles the
 bits of the input byte according to the following diagram:
 
-![Bit shuffling diagram](factzors_enc3.svg)
+![Bit shuffling diagram](factzors_enc3.svg.png)
 
 The inverse is simple to derive:
 
