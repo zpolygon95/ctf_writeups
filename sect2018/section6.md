@@ -6,7 +6,7 @@ The challenge text reads:
 This file was recovered from a scavenger.
 ```
 
-And, as usual, comes with a [downloadable hint](section6/section6.tar.gz).
+[This file](section6/section6.tar.gz)?
 
 Expanding the archive results in a single file, called `section6` which appears
 to be a zip archive:
