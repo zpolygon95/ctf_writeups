@@ -11,4 +11,4 @@ event's [page](https://ctftime.org/event/668/) on ctftime.
 
 ## Problems ##
 
-+ [Section6][section6.md]
++ [Section6](section6.md)
