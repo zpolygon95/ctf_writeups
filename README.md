@@ -7,3 +7,4 @@ contain my write-ups for each of the puzzles I solve. Find CTFs at
 ## Participation ##
 
 + [DC26 Crypto and Privacy Village goldbug CTF](cpv2018/README.md)
++ [SEC-T CTF 2018](sect2018/README.md)
