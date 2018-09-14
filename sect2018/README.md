@@ -11,4 +11,5 @@ event's [page](https://ctftime.org/event/668/) on ctftime.
 
 ## Problems ##
 
++ [Sanity Check](sanitycheck.md)
 + [Section6](section6.md)
