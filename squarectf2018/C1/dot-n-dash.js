@@ -12,6 +12,7 @@ function _encode(input) {
         // least significant 3 bits hold (j + 1) % 7
         // more significant bits hold (input.length - 1 - i) ... + 1 if j == 7
         a.push(1 + j + (input.length - 1 - i) * 8);
+        console.log('i,j,input[i],a[n] = ' + i + ',' + j + ',' + input[i] + ',' + a[a.length-1])
       }
     }
   }
@@ -51,27 +52,29 @@ function _decode(input) {
     // how convenient!
     a = [];
     for (x in b) {
-        j = (x & 7) - 1;
-        icorrection = 0;
-        if (j == -1)
-        {
-            j = 7;
-            // icorrection is the carry from the j region of x into the i region
-            icorrection = 1;
-        }
+        y = b[x] - 1;
+        j = y & 7;
         // because we don't know the length of the string in advance,
         // this i is actually the offset from the end of the string
         // e.g. 0 = the last character, 1 = second to last character, ...
-        i = (x >> 3) - icorrection;
+        i = y >> 3;
+        console.log(y + '=(' + i + ',' + j + ')');
         // initalize a[i] to 0
         if (typeof a[i] == 'undefined') a[i] = 0;
         a[i] |= 1 << j;
     }
-    return a;
+    z = a.reverse()
+    s = '';
+    for (i in z) {
+        s += String.fromCharCode(z[i]);
+    }
+    return s;
 }
 
 var data = fs.readFileSync(process.argv[3], 'utf8');
 if (process.argv[2] == 'e')
     console.log(_encode(data));
+else if (process.argv[2] == 'b')
+    console.log(_decode(_encode(data)));
 else
     console.log(_decode(data));
