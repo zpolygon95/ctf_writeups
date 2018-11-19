@@ -117,7 +117,6 @@ for (x in b) {
     // this i is actually the offset from the end of the string
     // e.g. 0 = the last character, 1 = second to last character, ...
     i = y >> 3;
-    console.log(y + '=(' + i + ',' + j + ')');
     // initalize a[i] to 0
     if (typeof a[i] == 'undefined') a[i] = 0;
     a[i] |= 1 << j;
@@ -136,8 +135,8 @@ for (i in z) {
 return s;
 ```
 
-The whole solution is implemnented [here](dot-n-dash.js) and, for the record,
-the decoded instructions read:
+The whole solution is implemnented [here](dot-n-dash.js) (including too many
+console.log calls) and, for the record, the decoded instructions read:
 
 ```
 Instructions to disable C1:
